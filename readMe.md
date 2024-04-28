@@ -11,6 +11,12 @@
 - click the green color code button on top right corner and then Download Zip
 - After Downloading the Zip file extract the file rename if needed
 - Open Chrome Browser
-- [Chrome Extensions](chrome://extensions/) click this
+- "chrome://extensions/" enter this URL
 - or
--
+- click the three dots in the top right corner of the chrome
+- click on Extensions > Manage Extensions
+- Now Toggle the Developer Mode button on top right corner
+- click on Load Unpacked button
+- select the Extracted folder
+- Then hola thats all you need
+- It starts to work right away

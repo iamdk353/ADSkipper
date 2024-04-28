@@ -3,6 +3,9 @@
   "name": "AD Skipper",
   "version": "1.0.0",
   "description": "A basic example extension that skips ads ",
+  "icons": {
+    "128": "icon.png"
+  },
   "permissions": ["activeTab", "scripting", "tabs"],
   "action": {
     "default_popup": "popup.html"
