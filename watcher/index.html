@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Class List Mutation Detection</title>
+  </head>
+  <body>
+    <div id="myElement" class="initial-class"></div>
+    <button id="stop">stop</button>
+    <button onclick="location.reload();">start</button>
+    <script>
+      // Function to handle mutations
+      function handleMutations(mutationsList) {
+        mutationsList.forEach((mutation) => {
+          if (
+            mutation.type === "attributes" &&
+            mutation.attributeName === "class"
+          ) {
+            // Class list mutation detected
+            console.log("Class list mutated:", mutation.target.className);
+          }
+        });
+      }
+      var element = document.getElementById("myElement");
+
+      // Options for the observer (which mutations to observe)
+      var observerConfig = {
+        attributes: true,
+        attributeFilter: ["class"],
+        subtree: false,
+      };
+
+      // Create a new observer instance
+      var observer = new MutationObserver(handleMutations);
+
+      // Start observing the target element for configured mutations
+      observer.observe(element, observerConfig);
+      //-------------------------------------------------------------------------------------
+      // Example mutation (you can test by uncommenting the line below)
+      let num = 0;
+      const rep = setInterval(() => {
+        num++;
+        element.classList.add("new-class" + num);
+      }, 1000);
+      document.getElementById("stop").addEventListener("click", () => {
+        clearInterval(rep);
+      });
+    </script>
+  </body>
+</html>
