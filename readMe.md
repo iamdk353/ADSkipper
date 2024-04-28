@@ -8,5 +8,9 @@
 
 ### How to Install this
 
-- click the code button on top right corner
+- click the green color code button on top right corner and then Download Zip
+- After Downloading the Zip file extract the file rename if needed
+- Open Chrome Browser
+- [Chrome Extensions](chrome://extensions/) click this
+- or
 -
