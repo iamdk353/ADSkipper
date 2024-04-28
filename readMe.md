@@ -1,7 +1,12 @@
 # This is a adSkipper extension
 
-### This is not a adBlocker this is a adSkiper i.e
+### This is not a AdBlocker this is a AdSkiper Extension i.e
 
-- it skips all the skippable ads right away ...!!!
-- ads that cannot be skipped are not skipped
+- It skips all the skippable ads right away ...!!!
+- Ads that comes with "plays soon" are not skipped
+- Shortly the feature of skipping AD shorts is going to be Integrated to this Extension
+
+### How to Install this
+
+- click the code button on top right corner
 -
